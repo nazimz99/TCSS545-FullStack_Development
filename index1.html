@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coronavirus US Statistics</title>
+        <link rel="stylesheet" type="text/css" href="css1.css">
+        <style>
+            ::-webkit-scrollbar {
+                width:10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        </style>
+    </head>
+    <body>
+		<div>
+			<form action="login.html">
+				<div class ="btn_to_admin">
+					<input type="submit"  formaction="login.html" name="submit" value="Go To Admin Page">
+				</div>
+			</form>
+		</div>
+		<div class="bannerTop">
+			<form class="SearchState" method="POST">
+				<div class="tabcontent">
+					<h1 style="display:inline">Coronavirus US Statistics</h1>
+					<a style="text-align: right" href="php/req_nation.php">Total Statistics</a>
+				</div>
+			</form>
+		</div>
+		<div class="bannerMid">
+			<form class="SearchAState" action="php/mypage.php" method="POST">
+				<h2>Search for U.S. State</h2>
+				<input type="text" name="state" placeholder="Enter State">
+				<input type="submit" value="Search for a state" formaction="php/mypage.php">
+
+			</form>
+			<div class="bannerMidLeft">
+				<div class="button">
+					<div class="RequestInfo">
+						<h2 style="margin-left: 35px;">Request Information</h2>
+					</div>
+
+					<form action="php/req_population.php" method="POST">
+						<input type="submit" value="Population">
+					</form>
+					<form action="php/req_workforce.php" method="POST">
+						<input type="submit" value="Workforce">
+					</form>
+					<form action="php/req_infections.php" method="POST">
+						<input type="submit" value="InfectionRate">
+					</form>
+					<form action="php/req_ratio.php" method="POST">
+						<input type="submit" value="Case Ratios">
+					</form>
+				</div>
+			</div>
+			
+			<div class="bannerMidRight">
+				<form method="POST">
+					<div class="dropdown">
+						<h2> GeneralStatistics</h2>
+					  <button class="dropbtn">General Cases</button>
+						<div id="myDropdown" class="dropdown-content">
+							
+						  <input type="submit" formaction="php/maxCases.php" name="maxCases" value="State with Max Cases">
+						  <input type="submit" formaction="php/minCases.php" name="minCases" value="State with Min Cases">
+						  <input type="submit" formaction="php/aboveAvgCases.php" name="higher" value="Above Average Cases">
+						  <input type="submit" formaction="php/lessAvgCases.php" name="lower" value="Below Average Cases">
+						  <input type="submit" formaction="php/test_workforce.php" name="test_workforce" value="Test vs Unemployment">
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="Procedure">
+				<form action="php/getNationInfections.php" method="POST">
+					<h3> Total Cases, Deaths, and Tests vs. Population and Infection Rate</h3>
+
+					<p>Enter a minimum population threshold</p>
+					<input type="number" name="size">
+					<input type="submit" value="Enter threshold">
+				</form>
+
+				<form action="php/getNationByCases.php" method="POST">
+					<h3>Total Cases, Deaths, and Tests Under Case and Test Ratio Threshold</h3>
+
+					<p>Enter maximum case threshold</p>
+					<input type="number" name="cases">
+					<p>Enter minimum test ratio threshold</p>
+					<input type="number" step="0.01" name="ratio">
+					<input type="submit" value="Enter thresholds">
+				</form>
+
+				<form action="php/getRatioCases.php" method="POST">
+					<h3>Total Cases and Optimized Death and Test Ratio</h3>
+
+					<p>Enter maximum case threshold</p>
+					<input type="number" name="cases">
+					<p>Enter maximum death ratio threshold</p>
+					<input type="number" step="0.01" name="death_ratio">
+					<p>Enter minimum test ratio threshold</p>
+					<input type="number" step="0.01" name="test_ratio">
+					<input type="submit" value="Enter thresholds">
+				</form>
+
+				<form action="php/getPopulationTests.php" method="POST">
+					<h3>Current Infection Rate vs. Current Population and Tests</h3>
+
+					<p>Enter minimum test threshold</p>
+					<input type="number" name="test">
+					<p>Enter minimum population threshold</p>
+					<input type="number" name="size">
+					<input type="submit" value="Enter thresholds"> 
+				</form>
+			</div>
+
+			<div class="Map">
+				<h2 style="text-align:center;">U.S. Map of Coronavirus</h2>
+				<img src="images/CoronaMapp.jpg" alt="coronamap" style="text-align:center" width="900" height="500"  />
+
+			</div>
+		</div>
+    </body>
+</html>
+

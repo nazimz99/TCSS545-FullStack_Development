@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+	background-color:  #14929C;
+    background-size:cover;
+    background-position: center;
+    font-family: sans-serif;
+	backface-visibility: visible;
+	
+	background: linear-gradient(132deg, #EC9393, #1665c1);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+                0% {background-position: 0% 50%;}
+                50% {background-position: 100% 50%;}
+                100% {background-position: 0% 50%;}
+            }
+
+.database{
+    border: none;
+    border-bottom: 1px solid #fff;
+   background: linear-gradient(132deg, #EC9393, #1665c1);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+    outline: none;
+    height: 400px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.database input[type="text"], [type="number"] {
+	width: auto;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.database input[type="submit"] {
+    width: 40%;
+    border-radius: 0px;
+    margin: 5px 0;
+    opacity: 1;
+    display: inline-block;
+    line-height: 20px;
+	border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 70px;
+}
+
+.nation {
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 610px;
+    /*background: #0A147E;*/
+	background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+.ratio {
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 515px;
+    background: #0A147E;
+	background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+.populate{
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 798px;
+    background: #0A147E;
+	background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+.infections {
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 515px;
+    background: #0A147E;
+	background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+.work {
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 608px;
+    background: #0A147E;
+	background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+
+
+.database input[type="text"]:hover, [type="number"]:hover{
+	border: 5px thick white;
+	background: #00049F;
+	border-bottom-color: red;
+}
+
+.database input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #0100A8;
+	font-weight: bold;
+}

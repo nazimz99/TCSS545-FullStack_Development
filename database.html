@@ -1,0 +1,133 @@
+<!Doctype html>
+<html>
+<head>
+    <title> Database Insertion Design </title>
+    <link rel="stylesheet" type="text/css" href="database.css">   
+</head>
+    <body>
+    <div class="database">
+    <div style="text-align: center">
+        <img src="images/databaselogo1.png" width="350" height="350" alt="login Img" class="avatar">
+    </div>
+    <div class="nation">
+        <h1>Nation</h1>
+            <form method="POST">
+				<p>State</p>
+                <input type="text" name="state" placeholder="Enter the State">
+				<p>TotalCases</p>
+                <input type="number" name="totalcases" placeholder="Enter the Total Cases">
+                <p>TotalDeaths</p>
+                <input type="number" name="totaldeaths" placeholder="Enter the Total Deaths">
+                <p>TotalTests</p>
+                <input type="number" name="totaltests" placeholder="Enter the Total Tests">
+                <div class ="btn_submit">
+                    <input type="submit" name="submit" value="Insert" formaction="php/add_nation.php">
+                </div> 
+				<div class ="btn_submit">
+					<input type="submit" name="submit" value="Delete" formaction="php/delete_nation.php">
+				</div>
+				<div class ="btn_submit">
+					<input type="submit" name="submit" value="Modify" formaction="php/modify_nation.php">
+				</div>
+            </form>
+    </div>
+		
+<!--Ratio class-->
+    <div class="ratio">
+    <h1>Ratio</h1>
+        <form  method="POST">
+            <p>State</p>
+            <input type="text" name="state" placeholder="Enter the State">
+            <p>Test Ratio</p>
+            <input type="number" step="0.01" name="testratio" placeholder="Enter the Test Ratio">
+            <p>Death Ratio</p>
+            <input type="number" step="0.01" name="deathratio" placeholder="Enter the Death Ratio">
+            <div class ="btn_submit">
+                <input type="submit" name="submit" value="Insert" formaction="php/add_ratio.php">
+            </div>
+			<div class ="btn_submit">
+					<input type="submit" name="submit" value="Delete" formaction="php/delete_ratio.php">
+			</div>
+			<div class ="btn_submit">
+				<input type="submit" name="submit" value="Modify" formaction="php/modify_ratio.php">
+			</div>
+        </form>
+    </div>
+		
+<!--Populate class-->
+    <div class="populate">
+        <h1>Population</h1>
+            <form method="POST">
+                <p>State</p>
+                <input type="text" name="state" placeholder="Enter the State">
+                <p>Number of People</p>
+                <input type="number" name="numofpeople" placeholder="Enter the NumOfPeople">
+                <p>Population Density</p>
+                <input type="number" name="pop_density" placeholder="Enter the population density">
+                <p>Cases per 1 Million People</p>
+                <input type="number" name="case_density" placeholder="Enter the case density">
+                <p>Deaths per 1 Million People</p>
+                <input type="number" name="death_density" placeholder="Enter the death density">
+                <p>Test per 1 Million People</p>
+                <input type="number" name="test_density" placeholder="Enter the test density">
+                <div class ="btn_submit">
+                    <input type="submit" name="submit" value="Insert" formaction="php/add_populate.php">
+                </div> 
+				<div class ="btn_submit">
+					<input type="submit" name="submit" value="Delete" formaction="php/delete_populate.php">
+				</div>
+				<div class ="btn_submit">
+					<input type="submit" name="submit" value="Modify" formaction="php/modify_populate.php">
+				</div>
+            </form>
+        </div>
+
+<!--Infection Rate class-->
+        <div class="infections">
+            <h1>InfectionRate</h1>
+                <form method="POST">
+                    <p>State</p>
+                    <input type="text" name="state" placeholder="Enter the State">
+                    <p>Initial Infection Rate</p>
+                    <input type="number" name="startrate" placeholder="Enter the starting infection rate">
+                    <p>Current Infection Rate</p>
+                    <input type="number" name="currentrate" placeholder="Enter the current infection rate">
+                    <div class ="btn_submit">
+                        <input type="submit" name="submit" value="Insert" formaction="php/add_infections.php">
+                    </div>
+					<div class ="btn_submit">
+						<input type="submit" name="submit" value="Delete" formaction="php/delete_infections.php">
+					</div>
+					<div class ="btn_submit">
+						<input type="submit" name="submit" value="Modify" formaction="php/modify_infections.php">
+					</div>
+                </form>
+            </div>
+            
+<!--Workforce class		-->
+            <div class="work">
+                <h1>Workforce</h1>
+                    <form method="POST">
+                        <p>State</p>
+                        <input type="text" name="state" placeholder="Enter the State">
+                        <p>Number of Workers</p>
+                        <input type="number" name="workers" placeholder="Enter workers number">
+                        <p>Unemployment</p>
+                        <input type="number" step="0.01" name="unemployed" placeholder="Enter the unemployed %">
+                        <p>Lockdown Status</p>
+                        <input type="text" name="lockdown" placeholder="Enter the lockdown status">
+                        <div class ="btn_submit">
+                            <input type="submit" name="submit" value="Insert" formaction="php/add_workforce.php">
+                        </div> 
+						<div class ="btn_submit">
+							<input type="submit" name="submit" value="Delete" formaction="php/delete_workforce.php">
+						</div>
+						<div class ="btn_submit">
+							<input type="submit" name="submit" value="Modify" formaction="php/modify_workforce.php">
+						</div>
+                    </form>
+        
+                </div>
+            </div>
+    </body>
+</html>

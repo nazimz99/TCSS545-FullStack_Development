@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+    <title> Login Form Design </title>
+    <link rel="stylesheet" type="text/css" href="global.css">   
+</head>
+    <body>
+    <div class="login-box">
+    <img src="images/avatar.png" alt="login Img" class="avatar">
+        <h1>Login Here</h1>
+            <form action="php/login.php?loggedin=true" method="POST">
+				<p>Username</p>
+				<input type="text" name="username" placeholder="Enter Username">
+				<p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password">
+                <div class ="btn_login">
+                    <input type="submit" name="submit" value="Login">
+                </div>
+				
+				
+				<a href="php/resetpassword.php">Forget Password</a>  
+				<div class ="btn_to_main">
+					<input type="submit"  formaction="index1.html" name="submit" value="Go To Main Page">
+				</div>
+            </form>
+        </div>
+		
+    </body>
+</html>
